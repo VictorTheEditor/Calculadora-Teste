@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>exercicios</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <section>
+
+        <div class="operaçao">
+            <p>Número: <input type="number" name="nbm" id="num1"> 
+
+            <input type="button" id="enviar" value="Adicionar" onclick="adicionar1()"></p>
+            <hr>
+
+            <div id="operadores">
+                <div id="adi" class="ope">+</div>
+                <div id="sub" class="ope">-</div>
+                <div id="div" class="ope">%</div>
+                <div id="mult" class="ope">X</div>
+            </div>
+            <hr>
+
+            <p>Número: <input type="number" name="nbm" id="num2">
+                
+            <input type="button" id="enviar" value="Adicionar" onclick="adicionar2()"></p>
+        </div>
+
+        <button onclick="resultado()" id="Resultado">Resultado</button>
+
+        <button id="limpar" onclick="limpar()">Limpar</button>
+        
+        <div id="res"></div>
+        
+
+    </section>
+
+    <footer>
+        <p>&copy;VictorTheDev</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
